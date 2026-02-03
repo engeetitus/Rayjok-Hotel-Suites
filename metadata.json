@@ -1,0 +1,8 @@
+{
+  "name": "Rayjok Hotel & Suites",
+  "description": "A luxury hotel booking and guest management application for Rayjok Hotel & Suites, featuring AI-powered concierge and seamless booking experiences.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
