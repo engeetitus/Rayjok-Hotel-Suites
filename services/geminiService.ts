@@ -2,10 +2,11 @@
 import { GoogleGenAI } from "@google/genai";
 import { Message } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
-
 export const getConciergeResponse = async (history: Message[]) => {
   try {
+    // Instantiate right before the call to ensure process.env.API_KEY is available
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
       contents: history.map(h => ({
