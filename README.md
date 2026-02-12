@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# Rayjok Hotel & Suites Ltd. - Web Application
 
-This contains everything you need to run your app locally.
+A premium hospitality platform featuring an AI-driven concierge and high-end room booking experience.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1MyNVdMokOJwYW8pXzlMRbfZlva56lJvq
+## Tech Stack
+- **Framework**: React 19
+- **Styling**: Tailwind CSS
+- **AI**: Google Gemini 3 Flash (Concierge Service)
+- **Routing**: React Router 7
 
-## Run Locally
+## Deployment to GitHub
+To push this project to your GitHub account:
 
-**Prerequisites:**  Node.js
+1. Create a new repository on GitHub.
+2. Open your terminal in this project root.
+3. Initialize and push:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: Rayjok Hotel & Suites with build artifacts"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git push -u origin main
+   ```
 
+## GitHub Pages Deployment
+The `dist/` folder is included in this repository. To host:
+1. Go to **Settings > Pages**.
+2. Set **Build and deployment** source to **Deploy from a branch**.
+3. Select `main` branch and the `/dist` folder.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Local Development
+```bash
+npm install
+npm run dev
+```
+
+---
+*Developed for Rayjok Hotel & Suites Ltd. - Class, Taste, Cool.*
